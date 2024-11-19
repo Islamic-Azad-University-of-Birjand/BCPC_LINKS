@@ -1,15 +1,13 @@
-const sendIsDark = document.querySelector('.test');
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import moon from "../../assets/images/moon.png";
 import sun from "../../assets/images/sun.png";
+import DataProvider from "@/context/DataProvider";
 
 const Header = () => {
-
-  const [darkMode , setDarkMode] =useState(false);
+  const {isDark , setIsDark}=useContext(DataProvider)
   const isDarkmod = ()=>{
-      setDarkMode((prev)=> (prev = !prev))
-      sendIsDark?.classList.toggle('dark')
+      setIsDark((prev)=> (prev = !prev)) 
   }
   return (
     <div className=" w-full h-52 flex justify-center items-center top-0 right-0 ">
@@ -19,7 +17,7 @@ const Header = () => {
             <NavLink to='/blog' className='w-1/3 h-full flex justify-center items-center text-xl hover:bg-gray-300 duration-500 dark:text-white dark:hover:bg-gray-500  '>Blog</NavLink>
           </div>
             <div onClick={isDarkmod} className="w-16 h-full flex justify-center items-center cursor-pointer hover:bg-gray-300 duration-500 rounded-xl mr-4 dark:hover:hover:bg-gray-500 ">
-              <img className="scale-110" src={darkMode ? sun : moon} />
+              <img className="scale-110" src={isDark ? sun : moon} />
             </div>
         </div>
     </div>
