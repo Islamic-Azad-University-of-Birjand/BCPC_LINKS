@@ -1,7 +1,7 @@
-import insta from "../../assets/images/insta.png"
-import telegram from "../../assets/images/tel.png"
-import linkdin from "../../assets/images/in.png"
-import github from "../../assets/images/github.png"
+import insta from "@/assets/images/insta.png"
+import telegram from "@/assets/images/tel.png"
+import linkdin from "@/assets/images/in.png"
+import github from "@/assets/images/github.png"
 const cardData = [
     {
         id : 1 , 

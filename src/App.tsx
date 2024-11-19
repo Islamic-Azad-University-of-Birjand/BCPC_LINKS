@@ -5,7 +5,7 @@ import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
 function App() {
   return (
-    <div className="relative dark:bg-gray-700">
+    <div className="relative w-full h-screen dark:bg-gray-700 flex justify-between flex-col items-center">
       <Header />
       <div className="main">
         <Routes>
