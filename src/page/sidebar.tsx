@@ -1,8 +1,4 @@
-const Sidebar = (props: {}) => {
-  return (
-    <div>
-      hi
-    </div>
-  )
-}
-export default Sidebar
+const Sidebar = () => {
+  return <div>hi</div>;
+};
+export default Sidebar;

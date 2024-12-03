@@ -9,11 +9,12 @@
     }
   ],
   "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "react": ["./node_modules/@types/react"],
+      "@/*": ["./src/*"]
     }
   }
 }
