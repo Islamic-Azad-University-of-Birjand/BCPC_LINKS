@@ -2,8 +2,8 @@ import { Links } from "./page/links";
 
 const data: any = [
   {
-    label: "Super Group",
-    src: "https://api.iconify.design/file-icons:telegram.svg",
+    label: "سوپر گروه",
+    src: "https://api.iconify.design/logos:telegram.svg",
     link: "https://t.me/SSCEUBIR",
   },
   //   {
@@ -12,8 +12,8 @@ const data: any = [
   //     link: "https://www.instagram.com/ssce_ubir?igsh=cDNmNDdyMnh5OHFk",
   //   },
   {
-    label: "SignUp",
-    src: "https://api.iconify.design/simple-icons:googleforms.svg",
+    label: "فرم ثبت نام",
+    src: "docSvg",
     link: "https://forms.gle/m7XjBsJc2NZ7KomC9",
   },
 ];
@@ -21,8 +21,8 @@ const data: any = [
 function App() {
   return (
     <>
-      <main className="grid place-items-center gap-2 min-h-screen ">
-        <div className="flex gap-4 items-center">
+      <main className="flex flex-col justify-center items-center gap-8 min-h-screen ">
+        <div className="flex flex-col gap-4 md:flex-row  items-center">
           {data.map((item: any, index: number) => (
             <Links
               key={index}
@@ -32,12 +32,11 @@ function App() {
             />
           ))}
         </div>
+        <footer className="text-center py-2 px-4 max-w-[33rem] text-gray-500">
+          در حال به‌روزرسانی وب‌سایت‌مون هستیم تا تجربه بهتری براتون فراهم کنیم.
+          از صبر و شکیبایی‌تون ممنونیم
+        </footer>
       </main>
-      <footer className="fixed bottom-0 left-1/2 -translate-x-1/2 text-center p-2 text-gray-500">
-        We are currently updating our website to enhance your experience. Thank
-        you for your patience! Please check back soon for new features and
-        improvements.
-      </footer>
     </>
   );
 }

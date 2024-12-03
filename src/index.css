@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 /* ... */
+
+* {
+  font-family: "Vazirmatn", sans-serif;
+}
