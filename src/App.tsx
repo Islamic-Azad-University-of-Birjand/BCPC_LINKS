@@ -1,3 +1,11 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Links } from "./page/links";
 
 const data: any = [
@@ -22,6 +30,20 @@ function App() {
   return (
     <>
       <main className="flex flex-col justify-center items-center gap-8 min-h-screen ">
+        <div>
+          <Card>
+            <CardHeader>
+              <CardTitle>Card Title</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+              <p>Card Footer</p>
+            </CardFooter>
+          </Card>
+        </div>
         <div className="flex flex-col gap-4 md:flex-row  items-center">
           {data.map((item: any, index: number) => (
             <Links
