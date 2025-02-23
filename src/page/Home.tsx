@@ -1,4 +1,4 @@
-import { Links } from "@/page/links";
+import { Links } from "@/page/Links";
 
 const data: any = [
   {

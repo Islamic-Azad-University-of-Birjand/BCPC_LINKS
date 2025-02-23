@@ -5,22 +5,9 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { NavLink} from "react-router";
-
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
-const router = [
-  {
-    title : <img src="https://api.iconify.design/lineicons:baloon.svg" />,
-    path :"/" 
-  },
-  {
-    title : "Log",
-    path :"/log" 
-  },
-  {
-    title : "Contact",
-    path : "/contact"
-  }
-]
+import router from "@/router";
+
 
 const  Navbar = () => {
 return (
@@ -28,7 +15,7 @@ return (
   <NavigationMenuList>
         {router.map((item,index : number) => 
     <NavigationMenuItem key={index}>
-      <NavLink to={item.path}>
+      <NavLink to={item? item.path : ""}>
       <NavigationMenuLink className={navigationMenuTriggerStyle()}>{item.title}</NavigationMenuLink>
       </NavLink>
     </NavigationMenuItem>
