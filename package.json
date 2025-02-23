@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "ready" : "pnpm lint"
+    "ready": "pnpm lint"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.6",

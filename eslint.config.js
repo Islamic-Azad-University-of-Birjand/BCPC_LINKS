@@ -26,5 +26,5 @@ export default tseslint.config(
       "no-explicit-any": "warn",
       "@typescript-eslint/no-explicit-any": "warn",
     },
-  }
+  },
 );

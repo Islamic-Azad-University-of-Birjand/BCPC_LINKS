@@ -18,27 +18,25 @@ const data: any = [
   },
 ];
 
-
 const Home = () => {
-return (
-<div className="flex flex-col justify-center items-center gap-12">
-        <div className="flex flex-col gap-4 md:flex-row  items-center">
-          {data.map((item: any, index: number) => (
-            <Links
-              key={index}
-              title={item.label}
-              linkTo={item.link}
-              imgUrl={item.src}
-            />
-          ))}
-        </div>
-        <footer className="text-center py-2 px-4 max-w-[33rem] text-gray-500">
-          در حال به‌روزرسانی وب‌سایت‌مون هستیم تا تجربه بهتری براتون فراهم کنیم.
-          از صبر و شکیبایی‌تون ممنونیم
-        </footer>
-       </div>
-  )
+  return (
+    <div className="flex flex-col justify-center items-center gap-12">
+      <div className="flex flex-col gap-4 md:flex-row  items-center">
+        {data.map((item: any, index: number) => (
+          <Links
+            key={index}
+            title={item.label}
+            linkTo={item.link}
+            imgUrl={item.src}
+          />
+        ))}
+      </div>
+      <footer className="text-center py-2 px-4 max-w-[33rem] text-gray-500">
+        در حال به‌روزرسانی وب‌سایت‌مون هستیم تا تجربه بهتری براتون فراهم کنیم.
+        از صبر و شکیبایی‌تون ممنونیم
+      </footer>
+    </div>
+  );
+};
 
-} 
-
-export default Home
+export default Home;
