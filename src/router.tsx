@@ -1,5 +1,7 @@
 import Home from "./page/Home";
 import Contact from "./page/Contact";
+import SignUp from "./page/SignUp";
+import Online from "./page/contest/Online";
 
 export interface Router {
   title: string | any;
@@ -19,13 +21,19 @@ const router: Router[] = [
     title: "Online Contest",
     name: "OnlineContest",
     path: "/contest/online",
-    component: "",
+    component: <Online />,
   },
   {
     name: "MainContest",
     title: "Main Contest",
     path: "/contest/main",
     component: "",
+  },
+  {
+    name: "SignUp",
+    title: "Signup",
+    path: "/signup",
+    component: <SignUp />,
   },
   {
     name: "Contact",
